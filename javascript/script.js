@@ -154,7 +154,7 @@ function domReady(){
     }
 
   
-    //Qoute of the day section 
+    //Quote of the day section 
 
     var quote = document.getElementById("Quote");
     var author = document.getElementById("Author");
