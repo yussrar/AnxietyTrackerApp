@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SerenityNow</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <h1>SerenityNow</h1>
+            </nav>
+        </header>
+
+        <main>
+            <div id="container">
+                <div id="formdiv">
+                    <h2>How Are You Feeling Today</h2>
+                    <form name="chart_form" action="#" method="POST">
+                        <div class="sliderdiv">
+                            <label for="anx_value">Stress Level</label>
+                            <input type="range" class="slider" id="anx_value" name="anx_value" min="1" max="10">
+                            <p class = "sliderValue"></p>
+                        </div>
+                        <div class="sliderdiv">
+                            <label for="caf_value">Caffiene Level</label>
+                            <input type="range" class="slider" id="caf_value" name="caf_value" min="1" max="10">
+                            <p class = "sliderValue"></p>
+                        </div>
+
+                        <div class="sliderdiv">
+                            <label for="med_value">Meditation</label>
+                            <input type="range" class="slider" id="med_value" name="med_value" min="1" max="10"><br><br>
+                            <p class = "sliderValue"></p>
+                        </div>
+
+                        <input class="button1" type="submit" value="Submit">
+                    </form>
+
+                    <div id="message">
+                        <p>You already made today's entry. Do you want to delete it?</p>
+                        <button class="button1" id="yes">Yes</button>
+                        <button class="button1" id="no">No</button>
+                    </div>
+                </div>
+
+                <div class="div2">
+                <div id="chartdiv"><canvas id="myChart"></canvas></div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"> </script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+                <script src="javascript/script.js"> </script>
+                
+                <button  class="button1" id="reset"> Reset Chart</button>
+                </div>
+                
+            </div>
+
+
+        <div id="quotediv">
+            <h3>Quote of the Day</h3>
+            <h2><span id="Quote"></span></h2>
+            <p><span id="Author"></span></p>
+        </div>
+        </main>
+    </body>
+</html>
+
